@@ -1,8 +1,0 @@
-BRD Copilot:
-
-The data engineering team wants to migrate an on-premises Oracle Data Warehouse to a cloud data platform, ensuring all Maintenance and Repair Obligation (MRO) data, reports, and dependent processes are fully replicated and validated before legacy decommission. 
-
-
-Requirement for a private equity firm:
-Portfolio Company Performance Monitoring
-The firm needs a centralized system to track and report on the financial and operational health of all portfolio companies in real time. This includes consolidating KPIs (revenue growth, EBITDA margins, cash burn, debt covenants), generating standardized reporting across companies with different ERP systems, and producing quarterly investor reports for LPs (Limited Partners) — all with role-based access controls to ensure sensitive data is shared only with the right stakeholders.
