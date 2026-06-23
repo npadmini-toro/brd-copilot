@@ -225,17 +225,15 @@ if go:
             except json.JSONDecodeError as e:
                 st.error(f"Could not parse JSON even after repair: {e}")
                 st.session_state.pop("brd", None); st.stop()
-                brd.setdefault("document_control", {})["date"] = date.today().strftime("%d %B %Y")
+              #  brd.setdefault("document_control", {})["date"] = date.today().strftime("%d %B %Y")
         st.session_state["brd"] = brd
        
 
 # ----- Render -----
-if "brd" in st.session_state:
-    brd = st.session_state["brd"]
     if not brd.get("scope_ok", False):
         st.warning(brd.get("redirect_message", "That input doesn't look like a requirements problem."))
         st.stop()
-
+    brd.setdefault("document_control", {})["date"] = date.today().strftime("%B %d, %Y")
     dc = brd.get("document_control", {})
     st.success(f"BRD generated: {dc.get('title', 'Untitled')}")
 
